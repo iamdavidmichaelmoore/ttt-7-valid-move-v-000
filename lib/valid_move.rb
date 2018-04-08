@@ -1,8 +1,8 @@
 def valid_move?(board, index)
-  move = input_to_index(index)
-  if position_taken?(board, move) && index.between?(0,8) == true
+  
+  if position_taken?(board, index) && index.between?(0,8) == true
     true
-  elsif position_taken?(board, move) && index.between?(0,8) == false
+  elsif position_taken?(board, index) && index.between?(0,8) == false
     false
   end
 end
